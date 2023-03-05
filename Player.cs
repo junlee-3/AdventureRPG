@@ -8,11 +8,12 @@ public class Player
     public static string? PlayerClass;
     
     //Constructor
-    public Player(string? name, int health, string[]? inventory)
+    public Player(string name, int health, string[] inventory, string playerClass)
     {
         Name = name;
         Health = health;
         Inventory = inventory;
+        PlayerClass = playerClass;
     }
 
     public class Warrior
