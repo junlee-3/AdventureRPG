@@ -19,6 +19,26 @@ public class Player
     public class Warrior
     {
         public static string[] Attacks = {"Sword Slash", "Shield Bash", "Heavy Swing", "Punch"};
+
+        public static void Attack()
+        {
+            Console.WriteLine("Choose your attack:");
+            foreach (var attack in Attacks)
+            {
+                Console.WriteLine(attack);
+                var chosenAttack = Console.ReadLine();
+            
+                if (chosenAttack == attack)
+                {
+                    Console.WriteLine($"You have chosen {attack}");
+                }
+                else
+                {
+                    Console.WriteLine("Please choose a valid attack!");
+                }
+            }
+           
+        }
     }
 
     public class Mage

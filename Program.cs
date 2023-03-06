@@ -47,7 +47,8 @@ namespace AdventureRPG
                     break;
             }
             
-            
+            Console.WriteLine("You have encountered a monster! Time to battle!");
+            Player.Warrior.Attack();
         } 
     }
 }
