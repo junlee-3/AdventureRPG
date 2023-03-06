@@ -23,7 +23,7 @@ namespace AdventureRPG
                     Console.WriteLine("You are a Mage! Your Attacks are:");
                     foreach (var attack in Player.Mage.Attacks)
                     {
-                        Console.WriteLine(attack);
+                        Console.WriteLine($"Your Attacks are {attack}");
                     }
                     break;
                 
@@ -31,12 +31,16 @@ namespace AdventureRPG
                     Console.WriteLine("You are a Warrior!");
                     foreach (var attack in Player.Warrior.Attacks)
                     {
-                        Console.WriteLine(attack);
+                        Console.WriteLine($"Your Attacks are {attack}");
                     }
                     
                     break;
                 case "Archer":
                     Console.WriteLine("You are an Archer!");
+                    foreach(var attack in Player.Archer.Attacks)
+                    {
+                        Console.WriteLine($"Your Attacks are {attack}");
+                    }
                     break;
                 default:
                     Console.WriteLine("Please choose a valid class of player, use the correct spelling!");

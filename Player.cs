@@ -28,6 +28,6 @@ public class Player
 
     public class Archer
     {
-        
+        public static string[] Attacks = { "Arrow Shot", "Arrow Volley", "Arrow Barrage", "Heal" };
     }
 }
