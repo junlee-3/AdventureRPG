@@ -49,6 +49,9 @@ namespace RPG.Models
             if (!this.isAlive == false) 
             {
                 Console.WriteLine($"{Name} is alive!");
+                int damage = new Random().Next(1, 20);
+                Console.WriteLine($"{Name} attacks for {damage} damage");
+                return damage;
             }
             // Dice
             return 10;

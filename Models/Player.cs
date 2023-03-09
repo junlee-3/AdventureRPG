@@ -37,7 +37,7 @@ namespace RPG.Models
         public int Attack()
         {
             Console.WriteLine("I am {0} and I have {1} health points", this.name, this.health);
-            if (!this.isAlive == false) 
+            if (!this.isAlive == false)
             {
                 Console.WriteLine($"{this.name} is alive!");
             }
@@ -61,6 +61,8 @@ namespace RPG.Models
         public int TakeDamage(int damage)
         {
             Console.WriteLine($"{Name} is hit!");
+            Health = Health - damage;
+            Console.WriteLine($"{this.name} has {this.health} health points");
             return 10;            
         }
 
